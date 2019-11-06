@@ -9,6 +9,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -63,6 +64,9 @@ public class MainActivity extends AppCompatActivity {
         tabLayout = (TabLayout) findViewById(R.id.tabLayout);
         tabLayout.setupWithViewPager(pager);
         pager.setCurrentItem(4);
+
+      ImageView mIv= findViewById(R.id.iv_test);
+      mIv.getDrawable().setLevel(5000);
     }
 
     @Override
